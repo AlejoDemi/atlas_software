@@ -23,7 +23,7 @@ export const ParticlesStars = () => {
             options={{
                 background: {
                     color: {
-                        value: "#000000"
+                        value: "#011120"
                     }
                 },
                 fpsLimit: 120,
@@ -70,7 +70,7 @@ export const ParticlesStars = () => {
                             default: "bounce"
                         },
                         random: false,
-                        speed: 0.7,
+                        speed: 0.3,
                         straight: false
                     },
                     number: {
