@@ -25,7 +25,7 @@ const Navbar = () => {
             <ParallaxLayer speed={0.7} offset={0.45} style={{backgroundColor:"#2D112A",display:"flex",justifyContent:"center" }}>
                 <img style={{height:"30vh"}} src={logo}/>
             </ParallaxLayer>
-            <ParallaxLayer speed={0} offset={0} style={{backgroundColor:"#2D112A"}}>
+            <ParallaxLayer speed={0} offset={1} style={{backgroundColor:"#2D112A"}}>
             </ParallaxLayer>
         </Parallax>
     );
