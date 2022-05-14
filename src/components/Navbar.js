@@ -2,6 +2,8 @@ import React from 'react';
 import "./Navbar.css";
 import { Parallax, ParallaxLayer /*, IParallax*/ } from '@react-spring/parallax'
 import logo from '../assets/logo.png';
+import Particles from "react-tsparticles";
+import {ParticlesStars} from "./Particles";
 //import layer6 from '../assets/newLayer6.png'
 
 // used https://es.imgbb.com/ to upload the image and use it (line 25) - Pedro
@@ -22,6 +24,8 @@ const Navbar = () => {
                             <button className="button">Contact us</button>
                             <button className="button">Nose que mas poner</button>
                     </div>
+                    <ParticlesStars></ParticlesStars>
+
             </ParallaxLayer>
             <ParallaxLayer speed={0} offset={0} style={{backgroundImage: 'url("https://i.ibb.co/NSr3YBz/layer1.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
             </ParallaxLayer>
@@ -36,6 +40,7 @@ const Navbar = () => {
             <ParallaxLayer speed={0.7} offset={0.4} style={{backgroundImage:'url("https://i.ibb.co/xCtFBL2/layer6.png")', backgroundPosition:"center 0%", repeat:"true"}}>
             </ParallaxLayer>
             <ParallaxLayer speed={0} offset={0.75} style={{backgroundColor:"#011133",display:"flex",justifyContent:"center"}}>
+
                 <img alt="" style={{height:"35%",width:"30%",minHeight:"20px",minWidth:"220px",position:"sticky",marginBottom:"20px"}} src={logo}/>
             </ParallaxLayer>
             <ParallaxLayer speed={0} offset={1} style={{backgroundColor:"#011133",display:"flex",textAlign:"center",position:"sticky",margin:"auto",alignContent:"center",alignItems:"center"}}>
@@ -44,7 +49,6 @@ const Navbar = () => {
                             <p style={{color:"white",justifySelf:"center",margin:"auto"}}>{description} </p>
                             <p style={{color:"white",justifySelf:"center",margin:"auto"}}>{description} </p>
                     </div>
-
             </ParallaxLayer>
         </Parallax>
     );
