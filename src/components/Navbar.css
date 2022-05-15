@@ -21,7 +21,7 @@
 }
 
 .header .logo{
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: flex-start;
     margin: auto;
@@ -32,7 +32,7 @@
 }
 
 .buttonContainer{
-    width: 50%;
+    width: 30%;
     overflow: hidden;
     display: flex;
     justify-content: flex-end;
@@ -40,11 +40,11 @@
 
 .buttonContainer .button{
     height: 50%;
-    width: 10%;
+    width: 30%;
     min-height: 15px;
     min-width: 50px;
     font-family: Lato, serif;
-    font-size: 100%;
+    font-size: 120%;
     cursor: pointer;
     background: none;
     border: none;
