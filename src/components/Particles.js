@@ -24,7 +24,6 @@ export const ParticlesStars = () => {
             options={{
                 background: {
                     color: {
-                        value: "#000000"
                     },
                     size:{
                         value: "10px 10px"

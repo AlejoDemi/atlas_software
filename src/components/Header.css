@@ -1,16 +1,17 @@
 .header{
     display: flex;
-    height: 8vh;
+    height: 10vh;
     width: 100%;
     z-index: 1;
-    background: #000000;
+    background: #001027;
     flex-direction: row;
-    overflow:visible ;
+    overflow:hidden ;
 }
-.buttonContainer{
+.header .buttonContainer{
     width: 30%;
-    overflow: hidden;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -18,7 +19,7 @@
     height: 50%;
     width: 30%;
     min-height: 15px;
-    min-width: 50px;
+    min-width: 40px;
     font-family: Lato, serif;
     font-size: 120%;
     cursor: pointer;
@@ -27,4 +28,56 @@
     color: white;
     margin-right: 10%;
     margin-top: 2%;
+}
+
+.button:hover{
+    color: mediumturquoise;
+}
+
+
+.header .logo{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    align-items: center;
+}
+
+
+.logo img{
+    align-self: center;
+    height: 80px;
+
+}
+
+.header .text{
+    width:40%;
+    color:white;
+    display:flex;
+    justify-content:center;
+    font-size:110%;
+    text-align:center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text:hover{
+    color: mediumturquoise;
+}
+
+@media (max-width: 600px) {
+    .header .text{
+        width: 0;
+    }
+
+    .header .logo{
+        width: 30%;
+    }
+
+    .header .buttonContainer{
+        width: 70%;
+        margin:auto;
+        display: flex;
+        justify-content: flex-end;
+    }
 }

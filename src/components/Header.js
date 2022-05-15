@@ -12,15 +12,14 @@ const Header = () => {
                                         
         <div className={"header"}>
                 <div className={"logo"}>
-                    <img alt="" style={{justifySelf:"flex-start"}} src={logo}/>
+                    <img alt="" style={{cursor:"pointer",justifySelf:"flex-start"}} src={logo}/>
                 </div>
-                <div style={{width:"40%",color:"white",display:"flex",justifyContent:"center",flexDirection:"row",fontSize:"30px",textAlign:"start"}}>
+                <div className={"text"}>
                     <Typical
                         steps={[
-                        'EVOLUTION', 3000,
-                        'CHANGE', 3000,
+                        'BORN TO CREATE',3000,
                         'ATLAS SOFTWARE', 3000,
-                        'CARRYING THE WORLD FORWARD', 5000,
+                        'CARRYING THE WORLD FORWARD', 4000,
                         ]}
                         loop={Infinity}/>
                 </div>

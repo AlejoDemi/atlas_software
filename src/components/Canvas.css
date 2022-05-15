@@ -12,15 +12,5 @@
 
 
 
-.header .logo{
-    width: 30%;
-    display: flex;
-    justify-content: flex-start;
-    margin: auto;
-}
-
-.logo img{
-    height: 100px;
-}
 
 
