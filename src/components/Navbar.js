@@ -19,8 +19,6 @@ const Navbar = () => {
             "Aca tiene que haber una descripcion basica flayera de los valores y propositos de la compañia " +
             "Aca tiene que haber una descripcion basica flayera de los valores y propositos de la compañia "
 
-
-
     return (
         <div style={{overflow:"hidden"}}>
                 <div className={"header"}>
