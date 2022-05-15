@@ -24,6 +24,9 @@ export const ParticlesStars = () => {
                 background: {
                     color: {
                         value: "#000000"
+                    },
+                    size:{
+                        value: "10px 10px"
                     }
                 },
                 fpsLimit: 120,

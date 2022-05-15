@@ -6,6 +6,8 @@ import logo from '../assets/logo.png';
 import Particles from "react-tsparticles";
 import {ParticlesStars} from "./Particles";
 
+import layer1 from "../assets/layer1.png"
+
 
 //import layer6 from '../assets/newLayer6.png'
 
@@ -24,42 +26,34 @@ const Navbar = () => {
                 <div className={"header"}>
                     <div className={"logo"}>
                         <img alt="" style={{justifySelf:"flex-start"}} src={logo}/>
-
                     </div>
+
                     <div className={"buttonContainer"}>
                         <button className="button" onClick={()=>console.log("hola")}>Who we are</button>
                         <button className="button">Contact us</button>
-
                     </div>
-
                 </div>
-
-
+                
                 <div >
-                    <Parallax config={{precision:0,tension:1000,clamp:true}} pages={2} className="parallax" innerStyle={{backgroundColor:"#011120"}}>
-                                <ParallaxLayer speed={0} offset={0} innerStyle={{display:"flex",flexDirection:"column",backgroundImage: 'url("https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ac35929aa1146b1afd954acbaa6fbc1~tplv-k3u1fbpfcp-watermark.awebp?")',backgroundSize:"contain", repeat:"true"}}>
+                    <Parallax config={{presicion:10000,tension:10000000,clamp:true}} pages={6} className="parallax" innerStyle={{backgroundColor:"#001027"}}>
+                                <ParallaxLayer speed={-0.35} offset={0} innerStyle={{display:"flex",flexDirection:"column",backgroundImage: 'url("https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ac35929aa1146b1afd954acbaa6fbc1~tplv-k3u1fbpfcp-watermark.awebp?")',backgroundSize:"contain", repeat:"true"}}>
+                                        <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}}/>
+                                </ParallaxLayer>
 
-
-                                        <ParticlesStars/>
-
+                                <ParallaxLayer speed={-0.35} offset={0} style={{backgroundImage: 'url("https://i.ibb.co/n7VH21j/logo-White.png)', backgroundPosition: 'center 5%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0} offset={0.1} style={{backgroundImage: 'url("https://i.ibb.co/NSr3YBz/layer1.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                
+                                <ParallaxLayer speed={-0.35} offset={0.05} style={{backgroundImage: 'url("https://i.ibb.co/y50x5H5/layer1.png)', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0.1} offset={0.1} style={{backgroundImage:'url("https://i.ibb.co/41T2gHt/layer2.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                <ParallaxLayer speed={-0.25} offset={0.05} style={{backgroundImage:'url("https://i.ibb.co/M6ycpyd/layer2.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0.2} offset={0.1} style={{backgroundImage:'url("https://i.ibb.co/D9VmBQ0/layer3.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                <ParallaxLayer speed={-0.2} offset={0.05} style={{backgroundImage:'url("https://i.ibb.co/M8xNCvZ/layer3.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0.3} offset={0.1} style={{backgroundImage:'url("https://i.ibb.co/cJ3Q0gQ/layer4.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                <ParallaxLayer speed={0.1} offset={0.05} style={{backgroundImage:'url("https://i.ibb.co/YNT5hnM/layer4.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0.4} offset={0.1} style={{backgroundImage:'url("https://i.ibb.co/NrJtcpK/layer5.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                <ParallaxLayer speed={0.15} offset={0.05} style={{backgroundImage:'url("https://i.ibb.co/X2q0F05/layer5.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0.5} offset={0.5} style={{backgroundImage:'url("https://i.ibb.co/xCtFBL2/layer6.png")', backgroundPosition:"center 0%", repeat:"true"}}>
-                                </ParallaxLayer>
-                                <ParallaxLayer sticky={{start:0,end:2}} speed={0.1} style={{display:"flex",justifyContent:"center"}}>
-
-                                </ParallaxLayer>
-                                <ParallaxLayer speed={0} offset={0.9} style={{backgroundColor:"#011120",display:"flex",textAlign:"center",position:"sticky",margin:"auto",alignContent:"center",alignItems:"center"}}>
-
+                                <ParallaxLayer speed={0.35} offset={0.45} style={{backgroundImage:'url("https://i.ibb.co/LZnHyJ7/layer6.png")', backgroundPosition:"center 0%", repeat:"true"}}>
                                 </ParallaxLayer>
                                 <ParallaxLayer speed={0} offset={1}>
                                         <div style={{display:"flex",textAlign:"center",margin:"auto",width:"60vw",flexDirection:"column"}}>
@@ -73,10 +67,6 @@ const Navbar = () => {
 
 
         </div>
-
-
-
-
     );
 };
 
