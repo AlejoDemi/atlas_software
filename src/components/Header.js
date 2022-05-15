@@ -25,8 +25,8 @@ const Header = () => {
                         loop={Infinity}/>
                 </div>
                 <div className={"buttonContainer"}>
-                    <a className="button" href='#whoWeAre' >Who we are</a>
-                    <a className="button" href='#contactUs'>Contact us</a>
+                    <a className="button" >Who we are</a>
+                    <a className="button">Contact us</a>
                 </div>
         </div>
     );

@@ -25,27 +25,29 @@ const Canvas = () => {
                                         <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}}/>
                                 </ParallaxLayer>
 
-                                <ParallaxLayer speed={-0.35} offset={0.065} style={{backgroundImage: 'url("https://i.ibb.co/n7VH21j/logo-White.png)', backgroundPosition: 'center 5%', repeat:"true"}}>
+                                <ParallaxLayer speed={-0.35} offset={0.07} style={{backgroundImage: 'url("https://i.ibb.co/n7VH21j/logo-White.png)', backgroundPosition: 'center 5%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={-0.35} offset={0.15} style={{backgroundImage: 'url("https://i.ibb.co/y50x5H5/layer1.png)', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                <ParallaxLayer speed={-0.35} offset={0.2} style={{backgroundImage: 'url("https://i.ibb.co/y50x5H5/layer1.png)', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={-0.25} offset={0.1} style={{backgroundImage:'url("https://i.ibb.co/M6ycpyd/layer2.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                <ParallaxLayer speed={-0.25} offset={0.15} style={{backgroundImage:'url("https://i.ibb.co/M6ycpyd/layer2.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={-0.2} offset={0.1} style={{backgroundImage:'url("https://i.ibb.co/M8xNCvZ/layer3.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                <ParallaxLayer speed={-0.2} offset={0.15} style={{backgroundImage:'url("https://i.ibb.co/M8xNCvZ/layer3.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0.1} offset={0.1} style={{backgroundImage:'url("https://i.ibb.co/YNT5hnM/layer4.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                <ParallaxLayer speed={0.1} offset={0.15} style={{backgroundImage:'url("https://i.ibb.co/YNT5hnM/layer4.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0.15} offset={0.1} style={{backgroundImage:'url("https://i.ibb.co/X2q0F05/layer5.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                <ParallaxLayer speed={0.1} offset={1} style={{background:"#001027"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0.35} offset={0.5} style={{backgroundImage:'url("https://i.ibb.co/LZnHyJ7/layer6.png")', backgroundPosition:"center 0%", repeat:"true"}}>
+                                <ParallaxLayer speed={0.15} offset={0.15} style={{backgroundImage:'url("https://i.ibb.co/X2q0F05/layer5.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0.35} offset={1} style={{background:"#001027"}}>
+                                <ParallaxLayer speed={0.35} offset={0.55} style={{backgroundImage:'url("https://i.ibb.co/LZnHyJ7/layer6.png")', backgroundPosition:"center 0%", repeat:"true"}}>
                                 </ParallaxLayer>
-                                <ParallaxLayer speed={0} offset={1}>
+                                <ParallaxLayer speed={0.35} offset={1.5} style={{background:"#001027"}}>
+                                </ParallaxLayer>
+                                <ParallaxLayer speed={0} offset={1.5}>
 
                                 </ParallaxLayer>
 
-                                <ParallaxLayer sticky={{start:0,end:3}}>
+                                <ParallaxLayer sticky={{start:0,end:0.3}}>
                                         <Header/>
                                 </ParallaxLayer>
 

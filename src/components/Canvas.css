@@ -10,15 +10,7 @@
     width: 200vh;
 }
 
-.header{
-    display: flex;
-    height: 10vh;
-    width: 100%;
-    z-index: 1;
-    background: #000000;
-    flex-direction: row;
-    overflow:visible ;
-}
+
 
 .header .logo{
     width: 30%;
@@ -31,24 +23,4 @@
     height: 100px;
 }
 
-.buttonContainer{
-    width: 30%;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-}
 
-.buttonContainer .button{
-    height: 50%;
-    width: 30%;
-    min-height: 15px;
-    min-width: 50px;
-    font-family: Lato, serif;
-    font-size: 120%;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: white;
-    margin-right: 10%;
-    margin-top: 2%;
-}
