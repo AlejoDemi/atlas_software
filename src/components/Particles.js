@@ -23,7 +23,7 @@ export const ParticlesStars = () => {
             options={{
                 background: {
                     color: {
-                        value: "#011120"
+                        value: "#000000"
                     }
                 },
                 fpsLimit: 120,
