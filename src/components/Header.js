@@ -17,9 +17,9 @@ const Header = () => {
                 <div className={"text"}>
                     <Typical
                         steps={[
-                        'BORN TO CREATE',3000,
-                        'ATLAS SOFTWARE', 3000,
-                        'CARRYING THE WORLD FORWARD', 4000,
+                        'BORN TO CREATE',1000,
+                        'ATLAS SOFTWARE', 1000,
+                        'CARRYING THE WORLD FORWARD', 2000,
                         ]}
                         loop={Infinity}/>
                 </div>
