@@ -5,7 +5,7 @@ import { Parallax, ParallaxLayer /*, IParallax*/ } from '@react-spring/parallax'
 import logo from '../assets/logo.png';
 import Particles from "react-tsparticles";
 import {ParticlesStars} from "./Particles";
-
+import Typical from 'react-typical';
 import layer1 from "../assets/layer1.png"
 
 
@@ -40,8 +40,7 @@ const Navbar = () => {
 
                                 <ParallaxLayer speed={-0.35} offset={0} style={{backgroundImage: 'url("https://i.ibb.co/n7VH21j/logo-White.png)', backgroundPosition: 'center 5%', repeat:"true"}}>
                                 </ParallaxLayer>
-                                
-                                <ParallaxLayer speed={-0.35} offset={0.05} style={{backgroundImage: 'url("https://i.ibb.co/y50x5H5/layer1.png)', backgroundPosition: 'center 40%', repeat:"true"}}>
+                                <ParallaxLayer speed={-0.35} offset={0.15} style={{backgroundImage: 'url("https://i.ibb.co/y50x5H5/layer1.png)', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
                                 <ParallaxLayer speed={-0.25} offset={0.05} style={{backgroundImage:'url("https://i.ibb.co/M6ycpyd/layer2.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                                 </ParallaxLayer>
@@ -53,11 +52,20 @@ const Navbar = () => {
                                 </ParallaxLayer>
                                 <ParallaxLayer speed={0.35} offset={0.45} style={{backgroundImage:'url("https://i.ibb.co/LZnHyJ7/layer6.png")', backgroundPosition:"center 0%", repeat:"true"}}>
                                 </ParallaxLayer>
+                                <ParallaxLayer speed={0.35} offset={1} style={{background:"#001027"}}>
+                                </ParallaxLayer>
                                 <ParallaxLayer speed={0} offset={1}>
-                                        <div style={{display:"flex",textAlign:"center",margin:"auto",width:"60vw",flexDirection:"column"}}>
-                                                <p style={{color:"white",justifySelf:"center",margin:"auto"}}>{description} </p>
-                                                <p style={{color:"white",justifySelf:"center",margin:"auto"}}>{description} </p>
-                                                <p style={{color:"white",justifySelf:"center",margin:"auto"}}>{description} </p>
+                                        <div style={{color:"white",display:"flex",justifyContent:"center",flexDirection:"row"}}>
+                                            <span>WE</span>
+                                            <Typical
+                                                steps={[
+                                                    'INNOVATE', 1000,
+                                                    'CREATE', 1000,
+                                                    'DESIGN', 1000,
+                                                    'TRANSFORM', 2000,
+                                                ]}
+                                                loop={Infinity}
+                                            />
                                         </div>
                                 </ParallaxLayer>
                         </Parallax>

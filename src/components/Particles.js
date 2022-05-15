@@ -15,6 +15,7 @@ export const ParticlesStars = () => {
         console.log(container);
     };
 
+
     return (
         <Particles
             id="tsparticles"
