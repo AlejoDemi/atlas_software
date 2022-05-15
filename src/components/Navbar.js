@@ -29,7 +29,6 @@ const Navbar = () => {
                     <div className={"buttonContainer"}>
                         <button className="button" onClick={()=>console.log("hola")}>Who we are</button>
                         <button className="button">Contact us</button>
-                        <button className="button">Nose que mas poner</button>
 
                     </div>
 
