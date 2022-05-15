@@ -87,7 +87,7 @@ export const ParticlesStars = () => {
                         value: 1
                     },
                     shape: {
-                        type: "circle"
+                        type: "square"
                     },
                     size: {
                         value: { min: 1, max: 2 }

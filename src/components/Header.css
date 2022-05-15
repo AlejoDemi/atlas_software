@@ -13,6 +13,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    text-align: center;
 }
 
 .buttonContainer .button{
@@ -79,5 +80,11 @@
         margin:auto;
         display: flex;
         justify-content: flex-end;
+
+    }
+
+    .buttonContainer .button{
+        border: 1px solid white;
+        border-radius: 3px;
     }
 }
