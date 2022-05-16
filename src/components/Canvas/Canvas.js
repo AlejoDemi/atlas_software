@@ -25,7 +25,7 @@ const Canvas = () => {
 
     return (
 
-                    <Parallax ref={ref} config={{precision:10000,tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#001027"}}>
+                    <Parallax ref={ref} config={{precision:10000,tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#001027",scrollBehavior:"smooth"}}>
 
                         <ParallaxLayer speed={-0.35} offset={0} innerStyle={{display:"flex",flexDirection:"column",backgroundImage: 'url("https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ac35929aa1146b1afd954acbaa6fbc1~tplv-k3u1fbpfcp-watermark.awebp?")',backgroundSize:"contain", repeat:"true"}}>
                                         <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}}/>
