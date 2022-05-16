@@ -3,9 +3,10 @@
     height: 10vh;
     width: 100%;
     z-index: 1;
-    background: #001027;
+    background: none;
     flex-direction: row;
     overflow:hidden ;
+    padding: 5px;
 }
 .header .buttonContainer{
     width: 50%;
@@ -32,7 +33,7 @@
 }
 
 .button:hover{
-    color: mediumturquoise;
+    color: #f3c9d0;
 }
 
 
@@ -40,24 +41,29 @@
     width: 50%;
     display: flex;
     justify-content: flex-start;
-    margin: auto;
-    align-items: center;
+    height: 100%;
+    align-content: flex-start;
+
 }
 
 
 .logo img{
-    align-self: center;
-    height: 80px;
-
+    height: 90px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {
     .header .logo{
-        width: 30%;
+        width: 40%;
+    }
+
+    .logo img{
+        height: 70px;
     }
 
     .header .buttonContainer{
-        width: 70%;
+        width: 60%;
         margin: auto;
         display: flex;
         justify-content: flex-end;
@@ -66,8 +72,6 @@
 
     .buttonContainer .button{
         width: 50%;
-        border: 1px solid white;
-        border-radius: 3px;
     }
 }
 

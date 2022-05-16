@@ -27,7 +27,7 @@ const Canvas = () => {
                                         <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}}/>
                         </ParallaxLayer>
 
-                        <ParallaxLayer speed={-0.35} offset={0.07} style={{backgroundImage: 'url("https://i.ibb.co/4V615ZS/logoBig.png")', backgroundPosition: 'center 9%', repeat:"true", backgroundSize:"600px 603.99168px"}}>
+                        <ParallaxLayer speed={-0.35} offset={0.07} style={{backgroundImage: 'url("https://i.ibb.co/4V615ZS/logoBig.png")', backgroundPosition: 'center 9%', repeat:"true", backgroundSize:"400px 410px"}}>
                         </ParallaxLayer>
                         <ParallaxLayer speed={-0.35} offset={0.35} style={{backgroundImage: 'url("https://i.ibb.co/ZgTGD80/layer1.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                         </ParallaxLayer>
