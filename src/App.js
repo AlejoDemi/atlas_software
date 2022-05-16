@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import Canvas from "./components/Canvas";
+import Canvas from "./components/Canvas/Canvas";
 import {useEffect, useState} from "react";
 import { SpinnerDotted } from 'spinners-react';
 //import  {ParticlesStars} from "./components/Particles";

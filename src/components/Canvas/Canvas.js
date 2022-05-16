@@ -2,8 +2,8 @@ import "./Canvas.css";
 import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import {ParticlesStars} from "./Particles";
 import Header from "./Header.js";
-import AboutUs from "./AboutUs/AboutUs";
-import ContactUs from "./ContactUs/ContactUs";
+import AboutUs from "../AboutUs/AboutUs";
+import ContactUs from "../ContactUs/ContactUs";
 import {useRef} from "react";
 
 //import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -52,7 +52,7 @@ const Canvas = () => {
                         <ParallaxLayer speed={0} offset={1.6}>
                         </ParallaxLayer>
 
-                        <ParallaxLayer sticky={{start:0,end:1.8}} >
+                        <ParallaxLayer sticky={{start:0,end:1.86}} >
                                 <Header goToContact={()=>ref.current.scrollTo(1.9)}
                                         goToAboutUs={()=>ref.current.scrollTo(1)}
                                         goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
@@ -62,7 +62,7 @@ const Canvas = () => {
                             <AboutUs></AboutUs>
                         </ParallaxLayer>
 
-                        <ParallaxLayer sticky={{start:2}} >
+                        <ParallaxLayer offset={2}  >
                            <ContactUs></ContactUs>
                         </ParallaxLayer>
 
