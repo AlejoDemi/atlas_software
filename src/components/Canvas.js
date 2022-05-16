@@ -1,10 +1,11 @@
-import React/*, {useRef}*/ from 'react';
 import "./Canvas.css";
-import { Parallax, ParallaxLayer, /*IParallax*/ } from '@react-spring/parallax'
+import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import {ParticlesStars} from "./Particles";
 import Header from "./Header.js";
 import AboutUs from "./AboutUs/AboutUs";
 import ContactUs from "./ContactUs/ContactUs";
+import {useRef} from "react";
+
 //import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 //import {config, useSpring} from 'react-spring'
 
@@ -19,11 +20,12 @@ const Canvas = () => {
         //    "Aca tiene que haber una descripcion basica flayera de los valores y propositos de la compañia "
 
 
-    return (
-        <div style={{overflow:"hidden"}}>                
-                <div >
+    const ref=useRef();
 
-                    <Parallax config={{precision:10000,tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#001027"}}>
+
+    return (
+
+                    <Parallax ref={ref} config={{precision:10000,tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#001027"}}>
 
                         <ParallaxLayer speed={-0.35} offset={0} innerStyle={{display:"flex",flexDirection:"column",backgroundImage: 'url("https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ac35929aa1146b1afd954acbaa6fbc1~tplv-k3u1fbpfcp-watermark.awebp?")',backgroundSize:"contain", repeat:"true"}}>
                                         <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}}/>
@@ -50,21 +52,22 @@ const Canvas = () => {
                         <ParallaxLayer speed={0} offset={1.6}>
                         </ParallaxLayer>
 
-                        <ParallaxLayer sticky={{start:0,end:1.8}}>
-                                <Header/>
+                        <ParallaxLayer sticky={{start:0,end:1.8}} >
+                                <Header goToContact={()=>ref.current.scrollTo(1.9)}
+                                        goToAboutUs={()=>ref.current.scrollTo(1)}
+                                        goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
                         </ParallaxLayer>
 
-                        <ParallaxLayer id="whoWeAre" offset={1.3} style={{color:"white"}}>
+                        <ParallaxLayer id="whoWeAre" offset={1} style={{color:"white"}}>
                             <AboutUs></AboutUs>
                         </ParallaxLayer>
 
-                        <ParallaxLayer sticky={{start:2,end:3}} >
+                        <ParallaxLayer sticky={{start:2}} >
                            <ContactUs></ContactUs>
                         </ParallaxLayer>
 
                         </Parallax>
-                </div>
-        </div>
+
     );
 };
 

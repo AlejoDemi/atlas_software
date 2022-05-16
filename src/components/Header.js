@@ -14,21 +14,21 @@ import './Header.css'
 */
 
 
-const Header = () => {
+const Header = (props) => {
 
 
     return(
                                         
         <div className={"header"}>
                 <div className={"logo"}>
-                    <img alt="" style={{cursor:"pointer",justifySelf:"flex-start"}} src={logo}/>
+                    <img onClick={props.goToTop} alt="" style={{cursor:"pointer",justifySelf:"flex-start"}} src={logo}/>
                 </div>
                 <div className={"text"}>
                    
                 </div>
                 <div className={"buttonContainer"}>
-                    <a className="button" onClick={()=>console.log("hola")}>Who we are</a>
-                    <a className="button">Contact us</a>
+                    <button className="button" onClick={props.goToAboutUs}>Who we are</button>
+                    <button className="button" onClick={props.goToContact}>Contact us</button>
                 </div>
         </div>
     );
