@@ -1,0 +1,52 @@
+.contactUsBox{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto auto auto;
+    background: gray;
+    opacity: 0.6;
+    border-radius: 20px;
+}
+
+.contactUsBox .tittle{
+    font-size: 300%;
+    color: #b45c6c;
+}
+
+.contactUsBox .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form .input{
+    margin: auto auto 20px auto;
+    width: 60%;
+    height: 30px;
+    border: 3px solid #b45c6c;
+    border-radius: 10px;
+    font-size: large;
+
+}
+
+.input::placeholder{
+    font-size: large;
+    color: #282c34;
+    opacity: 0.8;
+}
+
+.form .button{
+    width: 60%;
+    margin: auto;
+    height: 30px;
+    border-radius: 10px;
+    background: #b45c6c;
+    border: 0px solid;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+}
+
+

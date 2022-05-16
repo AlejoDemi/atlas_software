@@ -3,6 +3,8 @@ import "./Canvas.css";
 import { Parallax, ParallaxLayer, /*IParallax*/ } from '@react-spring/parallax'
 import {ParticlesStars} from "./Particles";
 import Header from "./Header.js";
+import AboutUs from "./AboutUs/AboutUs";
+import ContactUs from "./ContactUs/ContactUs";
 //import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 //import {config, useSpring} from 'react-spring'
 
@@ -46,33 +48,18 @@ const Canvas = () => {
                         <ParallaxLayer speed={0.35} offset={1.6} style={{background:"#001027"}}>
                         </ParallaxLayer>
                         <ParallaxLayer speed={0} offset={1.6}>
-
                         </ParallaxLayer>
 
-                        <ParallaxLayer sticky={{start:0,end:4}}>
+                        <ParallaxLayer sticky={{start:0,end:1.8}}>
                                 <Header/>
                         </ParallaxLayer>
 
                         <ParallaxLayer id="whoWeAre" offset={1.3} style={{color:"white"}}>
-                        <p>WHO WE ARE</p>
-                        <p>WHO WE ARE</p>
-                        <p>WHO WE ARE</p>
-                        <p>WHO WE ARE</p>
-                        <p>WHO WE ARE</p>
-                        <p>WHO WE ARE</p>
-                        <p>WHO WE ARE</p>
-                        <p>WHO WE ARE</p>
+                            <AboutUs></AboutUs>
                         </ParallaxLayer>
 
-                        <ParallaxLayer id="contactUs" offset={2} style={{borderBottomRadius:"20px" , color:"white", background:"read"}}>
-                        <p>CONTACT US</p>
-                        <p>CONTACT US</p>
-                        <p>CONTACT US</p>
-                        <p>CONTACT US</p>
-                        <p>CONTACT US</p>
-                        <p>CONTACT US</p>
-                        <p>CONTACT US</p>
-                        <p>CONTACT US</p>
+                        <ParallaxLayer sticky={{start:2,end:3}} >
+                           <ContactUs></ContactUs>
                         </ParallaxLayer>
 
                         </Parallax>

@@ -1,6 +1,6 @@
 import React/*, {useRef}*/ from 'react';
 //import Typical from 'react-typical';
-import logo from '../assets/logo.png';
+import logo from '../assets/Canvas/logo.png';
 import './Header.css'
 //import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
@@ -27,7 +27,7 @@ const Header = () => {
                    
                 </div>
                 <div className={"buttonContainer"}>
-                    <a className="button" >Who we are</a>
+                    <a className="button" onClick={()=>console.log("hola")}>Who we are</a>
                     <a className="button">Contact us</a>
                 </div>
         </div>
