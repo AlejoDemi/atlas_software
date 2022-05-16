@@ -31,6 +31,12 @@ const AboutUs = () => {
     return (
         <div className={"container"}>
             <h1 className={"tittle"}>ABOUT US</h1>
+            <div className={"text"}>
+                <p>We are a tailor-made software company with the drive and skills necessary to take your business to the next level. </p>
+                <p>We seek to fully unleash the power of new, innovative technologies, along with the stability provided by fundamental classics. </p>
+                <p>Our goal is to cater for the needs of our clients, for we believe that together, we will make the world move forward. </p>
+            </div>
+
             <div className={"techList"}>
                 {list}
             </div>

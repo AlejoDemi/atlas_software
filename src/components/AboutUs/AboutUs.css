@@ -12,18 +12,38 @@
     font-size: 300%;
 }
 
+.container .text{
+    width: 80vw;
+    margin: 10px auto;
+}
+
 .container .techList{
     display: grid;
     width: 70%;
     height: 30%;
     margin: 10px auto auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit,80px);
+    justify-items: center;
 }
 
 .techList img{
 
     height: 60px;
-    min-width: 60px;
     max-width: 70px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 400px) {
+
+    .container .techList{
+        display: grid;
+        width: 70%;
+        height: 30%;
+        grid-template-columns: repeat(auto-fit,80px );
+    }
+
+    .techList img{
+        height: 40px;
+        width: 40px;
+    }
 }

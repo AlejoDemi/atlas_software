@@ -4,7 +4,7 @@ import {ParticlesStars} from "./Particles";
 import Header from "./Header.js";
 import AboutUs from "../AboutUs/AboutUs";
 import ContactUs from "../ContactUs/ContactUs";
-import {useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 
 //import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 //import {config, useSpring} from 'react-spring'
@@ -14,21 +14,27 @@ import {useRef} from "react";
 
 
 const Canvas = () => {
-        //const description="Aca tiene que haber una descripcion basica flayera de los valores y propositos de la compañia " +
-        //    "Aca tiene que haber una descripcion basica flayera de los valores y propositos de la compañia " +
-        //    "Aca tiene que haber una descripcion basica flayera de los valores y propositos de la compañia " +
-        //    "Aca tiene que haber una descripcion basica flayera de los valores y propositos de la compañia "
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
+    console.log(window.innerWidth)
+
+    const updateMedia = () => {
+        setDesktop(window.innerWidth > 600);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        return () => window.removeEventListener("resize", updateMedia);
+    });
 
 
     const ref=useRef();
 
 
     return (
-
-                    <Parallax ref={ref} config={{precision:10000,tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#001027",scrollBehavior:"smooth"}}>
+                <Parallax ref={ref} config={{precision:10000,tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#001027",scrollBehavior:"smooth"}}>
 
                         <ParallaxLayer speed={-0.35} offset={0} innerStyle={{display:"flex",flexDirection:"column",backgroundImage: 'url("https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ac35929aa1146b1afd954acbaa6fbc1~tplv-k3u1fbpfcp-watermark.awebp?")',backgroundSize:"contain", repeat:"true"}}>
-                                        <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}}/>
+                                        <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
                         </ParallaxLayer>
 
                         <ParallaxLayer speed={-0.35} offset={0.07} style={{backgroundImage: 'url("https://i.ibb.co/4V615ZS/logoBig.png")', backgroundPosition: 'center 9%', repeat:"true", backgroundSize:"400px 410px"}}>
@@ -62,11 +68,12 @@ const Canvas = () => {
                             <AboutUs></AboutUs>
                         </ParallaxLayer>
 
-                        <ParallaxLayer   sticky={{start:2,end:2}} offset={2} >
+                        <ParallaxLayer   offset={2} >
                            <ContactUs></ContactUs>
                         </ParallaxLayer>
 
                         </Parallax>
+
 
     );
 };

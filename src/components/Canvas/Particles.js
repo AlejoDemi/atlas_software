@@ -1,7 +1,7 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-export const ParticlesStars = () => {
+export const ParticlesStars = (props) => {
     const particlesInit = async (main) => {
         console.log(main);
 
@@ -30,14 +30,16 @@ export const ParticlesStars = () => {
                     }
                 },
                 fpsLimit: 120,
+
+
                 interactivity: {
                     events: {
                         onClick: {
-                            enable: true,
+                            enable: false,
                             mode: "push"
                         },
                         onHover: {
-                            enable: true,
+                            enable: props.interact,
                             mode: "grab"
                         },
                         resize: true
