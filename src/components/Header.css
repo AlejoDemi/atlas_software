@@ -8,7 +8,7 @@
     overflow:hidden ;
 }
 .header .buttonContainer{
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,7 +18,7 @@
 
 .buttonContainer .button{
     height: 50%;
-    width: 30%;
+    width: 20%;
     min-height: 15px;
     min-width: 40px;
     font-family: Lato, serif;
@@ -37,7 +37,7 @@
 
 
 .header .logo{
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: flex-start;
     margin: auto;
@@ -51,39 +51,21 @@
 
 }
 
-.header .text{
-    width:40%;
-    color:white;
-    display:flex;
-    justify-content:center;
-    font-size:110%;
-    text-align:center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.text:hover{
-    color: mediumturquoise;
-}
-
 @media (max-width: 600px) {
-    .header .text{
-        width: 0;
-    }
-
     .header .logo{
         width: 30%;
     }
 
     .header .buttonContainer{
         width: 70%;
-        margin:auto;
+        margin: auto;
         display: flex;
         justify-content: flex-end;
 
     }
 
     .buttonContainer .button{
+        width: 50%;
         border: 1px solid white;
         border-radius: 3px;
     }
