@@ -38,7 +38,7 @@ export const ParticlesStars = () => {
                         },
                         onHover: {
                             enable: true,
-                            mode: "repulse"
+                            mode: "grab"
                         },
                         resize: true
                     },

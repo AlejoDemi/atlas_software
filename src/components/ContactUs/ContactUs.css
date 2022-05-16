@@ -6,14 +6,12 @@
     justify-content: center;
     width: 50%;
     margin: 0 auto auto auto;
-    background: lightgrey;
-    opacity: 0.6;
     border-radius: 20px;
 }
 
 .contactUsBox .tittle{
     font-size: 300%;
-    color: #b45c6c;
+    color: white;
 }
 
 .contactUsBox .form{
