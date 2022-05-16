@@ -58,7 +58,7 @@ const Canvas = () => {
                         <ParallaxLayer speed={0} offset={1.6}>
                         </ParallaxLayer>
 
-                        <ParallaxLayer sticky={{start:0,end:1.86}} >
+                        <ParallaxLayer sticky={{start:0,end:1.9}} >
                                 <Header goToContact={()=>ref.current.scrollTo(1.9)}
                                         goToAboutUs={()=>ref.current.scrollTo(1)}
                                         goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
