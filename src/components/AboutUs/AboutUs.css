@@ -17,6 +17,10 @@
     margin: 10px auto;
 }
 
+.text p{
+    font-size: 20px;
+}
+
 .container .techList{
     display: grid;
     width: 70%;
