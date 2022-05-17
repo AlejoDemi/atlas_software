@@ -1,5 +1,5 @@
 import React/*, {useRef}*/ from 'react';
-import logo from '../../assets/Canvas/logo.png';
+import logo from '../../assets/canvas/logo.png';
 import './Header.css'
 
 const Header = (props) => {

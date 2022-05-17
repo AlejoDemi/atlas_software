@@ -31,7 +31,7 @@ const Canvas = () => {
 
 
     return (
-                <Parallax ref={ref} config={{precision:10000,tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#001027",scrollBehavior:"smooth"}}>
+                <Parallax ref={ref} config={{tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#001027",scrollBehavior:"smooth"}}>
 
                         <ParallaxLayer speed={-0.35} offset={0} innerStyle={{display:"flex",flexDirection:"column",backgroundImage: 'url("https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ac35929aa1146b1afd954acbaa6fbc1~tplv-k3u1fbpfcp-watermark.awebp?")',backgroundSize:"contain", repeat:"true"}}>
                                         <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
@@ -53,23 +53,28 @@ const Canvas = () => {
                         </ParallaxLayer>
                         <ParallaxLayer speed={0.35} offset={0.65} style={{backgroundImage:'url("https://i.ibb.co/jD0s68h/layer6.png")', backgroundPosition:"center 0%", repeat:"true"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={0.35} offset={1.6} style={{background:"#001027"}}>
-                        </ParallaxLayer>
-                        <ParallaxLayer speed={0} offset={1.6}>
+
+                        <ParallaxLayer speed={0.35} offset={0.9}>
+                        <section id="scrollIcon" >
+                            <span></span>
+                            </section>
                         </ParallaxLayer>
 
-                        <ParallaxLayer sticky={{start:0,end:1.9}} >
-                                <Header goToContact={()=>ref.current.scrollTo(1.9)}
-                                        goToAboutUs={()=>ref.current.scrollTo(1)}
-                                        goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
+                        <ParallaxLayer speed={0.35} offset={1.6} style={{background:"#001027"}}>
                         </ParallaxLayer>
 
                         <ParallaxLayer id="whoWeAre" offset={1} style={{color:"white"}}>
                             <AboutUs></AboutUs>
                         </ParallaxLayer>
 
-                        <ParallaxLayer   offset={2} sticky={{start:2,end:3}}>
+                        <ParallaxLayer offset={2} >
                            <ContactUs></ContactUs>
+                        </ParallaxLayer>
+
+                        <ParallaxLayer sticky={{start:0,end:2}} >
+                                <Header goToContact={()=>ref.current.scrollTo(1.9)}
+                                        goToAboutUs={()=>ref.current.scrollTo(1)}
+                                        goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
                         </ParallaxLayer>
 
                         </Parallax>
