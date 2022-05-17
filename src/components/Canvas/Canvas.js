@@ -68,7 +68,7 @@ const Canvas = () => {
                             <AboutUs></AboutUs>
                         </ParallaxLayer>
 
-                        <ParallaxLayer   offset={2} >
+                        <ParallaxLayer   offset={2} sticky={{start:2,end:3}}>
                            <ContactUs></ContactUs>
                         </ParallaxLayer>
 

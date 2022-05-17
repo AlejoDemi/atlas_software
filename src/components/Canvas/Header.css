@@ -28,7 +28,7 @@
     border: none;
     color: white;
     margin-right: 10%;
-    margin-top: 2%;
+    margin-top: -2%;
 }
 
 .button:hover{
@@ -42,6 +42,7 @@
     justify-content: flex-start;
     height: 100%;
     align-content: flex-start;
+    margin-left: 1%;
 
 }
 
