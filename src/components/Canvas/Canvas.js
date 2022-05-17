@@ -11,7 +11,7 @@ import {useEffect, useRef, useState} from "react";
 
 // used https://es.imgbb.com/ to upload the image and use it (line 25) - Pedro
 
-
+// <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
 
 const Canvas = () => {
     const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
@@ -34,12 +34,12 @@ const Canvas = () => {
                 <Parallax ref={ref} config={{tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#001027",scrollBehavior:"smooth"}}>
 
                         <ParallaxLayer speed={-0.35} offset={0} innerStyle={{display:"flex",flexDirection:"column",backgroundImage: 'url("https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ac35929aa1146b1afd954acbaa6fbc1~tplv-k3u1fbpfcp-watermark.awebp?")',backgroundSize:"contain", repeat:"true"}}>
-                                        <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
+                                       <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
                         </ParallaxLayer>
 
-                        <ParallaxLayer speed={-0.35} offset={0.07} style={{backgroundImage: 'url("https://i.ibb.co/4V615ZS/logoBig.png")', backgroundPosition: 'center 9%', repeat:"true", backgroundSize:"400px 410px"}}>
+                        <ParallaxLayer speed={-0.35} offset={0.07} style={{backgroundImage: 'url("https://i.ibb.co/Yf5bBhX/logo-Light.png")', backgroundPosition: 'center 9%', repeat:"true", backgroundSize:"400px 410px"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={-0.35} offset={0.35} style={{backgroundImage: 'url("https://i.ibb.co/ZgTGD80/layer1.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                        <ParallaxLayer speed={-0.35} offset={0.35} style={{backgroundImage: 'url("https://i.ibb.co/4PFw9G2/layer1.png")', backgroundPosition: '55% 40%', repeat:"true"}}>
                         </ParallaxLayer>
                         <ParallaxLayer speed={-0.25} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/YNhntph/layer2.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                         </ParallaxLayer>
