@@ -63,18 +63,18 @@ const Canvas = () => {
                         <ParallaxLayer speed={0.35} offset={1.6} style={{background:"#001027"}}>
                         </ParallaxLayer>
 
-                        <ParallaxLayer id="whoWeAre" offset={1} style={{color:"white"}}>
-                            <AboutUs></AboutUs>
-                        </ParallaxLayer>
-
-                        <ParallaxLayer offset={2} >
-                           <ContactUs></ContactUs>
-                        </ParallaxLayer>
-
                         <ParallaxLayer sticky={{start:0,end:2}} >
                                 <Header goToContact={()=>ref.current.scrollTo(1.9)}
                                         goToAboutUs={()=>ref.current.scrollTo(1)}
                                         goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
+                        </ParallaxLayer>
+
+                        <ParallaxLayer id="whoWeAre" offset={1} style={{color:"white"}}>
+                            <AboutUs></AboutUs>
+                        </ParallaxLayer>
+
+                        <ParallaxLayer sticky={{start:2.1,end:3}} offset={2} >
+                           <ContactUs></ContactUs>
                         </ParallaxLayer>
 
                         </Parallax>
