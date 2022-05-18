@@ -28,12 +28,17 @@ const ContactUs = () => {
 
   return (
     <div className={"contactUsBox"} style={{zIndex:"3"}} >
-        <h1 className={"tittle"}>CONTACT US</h1>
+        <h1 className={"title"}>CONTACT US</h1>
         <form ref={form} onSubmit={sendEmail} className={"form"}>
-            <input name = "user_name" className={"input"} type="text" placeholder={"Full Name"} onChange={e=>setFullName(e.target.value)}/>
-            <input name = "user_email" className={"input"} type="email" placeholder={"Email"} onChange={e=>setEmail(e.target.value)}/>
-            <textarea name = "message" className={"input"} type="text" style={{height:"80px"}} placeholder={"Message"} onChange={e=>setMessage(e.target.value)}/>
-            <input type="submit" value="Send" className={"button"} />
+            <div className={"text"}>
+                <input name = "user_name" className={"input"} type="text" placeholder={"Full Name"} onChange={e=>setFullName(e.target.value)}/>
+                <input name = "user_email" className={"input"} type="email" placeholder={"Email"} onChange={e=>setEmail(e.target.value)}/>
+                <textarea name = "message" className={"input"} style={{height:"80px"}} placeholder={"Message"} onChange={e=>setMessage(e.target.value)}/>
+            </div>
+            <div className={"formButtonContainer"}>
+                <input type="submit" value="Send" className={"button"} />
+
+            </div>
         </form>
     </div>
 );

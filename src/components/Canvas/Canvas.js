@@ -37,9 +37,9 @@ const Canvas = () => {
                                        <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
                         </ParallaxLayer>
 
-                        <ParallaxLayer speed={-0.35} offset={0.07} style={{backgroundImage: 'url("https://i.ibb.co/Yf5bBhX/logo-Light.png")', backgroundPosition: 'center 9%', repeat:"true", backgroundSize:"400px 410px"}}>
+                        <ParallaxLayer speed={-0.35} offset={0.07} style={{backgroundImage: 'url("https://i.ibb.co/0D0MGTz/light-Logo.png")', backgroundPosition: 'center 5%', repeat:"true", backgroundSize:"400px 410px"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={-0.35} offset={0.35} style={{backgroundImage: 'url("https://i.ibb.co/4PFw9G2/layer1.png")', backgroundPosition: '55% 40%', repeat:"true"}}>
+                        <ParallaxLayer speed={-0.35} offset={0.35} style={{backgroundImage: 'url("https://i.ibb.co/4PFw9G2/layer1.png")', backgroundPosition: '55% 10%', repeat:"true"}}>
                         </ParallaxLayer>
                         <ParallaxLayer speed={-0.25} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/YNhntph/layer2.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
                         </ParallaxLayer>
