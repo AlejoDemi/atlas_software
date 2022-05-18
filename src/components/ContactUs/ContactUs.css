@@ -1,11 +1,11 @@
 .contactUsBox{
-    height: 60%;
+    height: 45%;
     width: 50vw;
     border:5px solid white;
     border-radius: 20px;
     margin: auto;
     min-width: 300px;
-    min-height: 400px;
+    min-height: 300px;
     z-index: 1;
     max-height: 600px;
 }
@@ -57,8 +57,9 @@
 }
 
 .formButtonContainer .button{
+    font-size: 100%;
     border: 3px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     background: none;
     color: white;
     width: 15%;
@@ -66,10 +67,11 @@
     margin: auto;
     height: 80%;
     cursor: pointer;
+
 }
 
 
- .button :hover{
+.formButtonContainer .button:focus{
     background:white ;
     color: #001027;
 }
