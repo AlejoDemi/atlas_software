@@ -11,8 +11,6 @@ import {useEffect, useRef, useState} from "react";
 
 // used https://es.imgbb.com/ to upload the image and use it (line 25) - Pedro
 
-// <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
-
 const Canvas = () => {
     const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
     console.log(window.innerWidth)
@@ -34,24 +32,24 @@ const Canvas = () => {
                 <Parallax ref={ref} config={{tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#001027",scrollBehavior:"smooth"}}>
 
                         <ParallaxLayer speed={-0.35} offset={0} innerStyle={{display:"flex",flexDirection:"column",backgroundImage: 'url("https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ac35929aa1146b1afd954acbaa6fbc1~tplv-k3u1fbpfcp-watermark.awebp?")',backgroundSize:"contain", repeat:"true"}}>
-                                       <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
+                            <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
                         </ParallaxLayer>
 
                         <ParallaxLayer speed={-0.35} offset={0.07} style={{backgroundImage: 'url("https://i.ibb.co/0D0MGTz/light-Logo.png")', backgroundPosition: 'center 5%', repeat:"true", backgroundSize:"400px 410px"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={-0.35} offset={0.35} style={{backgroundImage: 'url("https://i.ibb.co/4PFw9G2/layer1.png")', backgroundPosition: '55% 10%', repeat:"true"}}>
+                        <ParallaxLayer speed={-0.35} offset={0.35} style={{backgroundImage: 'url("https://i.ibb.co/4PFw9G2/layer1.png")', backgroundPosition: '55% 40%', repeat:"true"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={-0.25} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/YNhntph/layer2.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                        <ParallaxLayer speed={-0.25} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/tbBYZwf/layer2.png")', backgroundPosition: 'center 70%', repeat:"true"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={-0.2} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/ZmfhRNP/layer3.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                        <ParallaxLayer speed={-0.2} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/V9TByyZ/layer3.png")', backgroundPosition: 'center 100%', repeat:"true"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={0.1} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/sCYZtPh/layer4.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                        <ParallaxLayer speed={0.1} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/XycKkVB/layer4.png")', backgroundPosition: 'center 80%', repeat:"true"}}>
                         </ParallaxLayer>
                         <ParallaxLayer speed={0.1} offset={1} style={{background:"#001027"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={0.15} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/Ws7ZZwn/layer5.png")', backgroundPosition: 'center 40%', repeat:"true"}}>
+                        <ParallaxLayer speed={0.15} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/RBnR2x7/layer5.png")', backgroundPosition: 'center 80%', repeat:"true"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={0.35} offset={0.65} style={{backgroundImage:'url("https://i.ibb.co/jD0s68h/layer6.png")', backgroundPosition:"center 0%", repeat:"true"}}>
+                        <ParallaxLayer speed={0.35} offset={0.65} style={{backgroundImage:'url("https://i.ibb.co/LhQ8PnK/layer6.png")', backgroundPosition:"center 0%", repeat:"true"}}>
                         </ParallaxLayer>
 
                         <ParallaxLayer speed={0.3} offset={0.9}>
@@ -78,8 +76,6 @@ const Canvas = () => {
                         </ParallaxLayer>
 
                         </Parallax>
-
-
     );
 };
 
