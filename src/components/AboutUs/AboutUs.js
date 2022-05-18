@@ -15,13 +15,13 @@ const AboutUs = () => {
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png",
         "https://academy.aviada.mx/wp-content/uploads/sites/6/2020/10/git-icon.png",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png",
-        "https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/800px-GraphQL_Logo.svg.png",
         "https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png",
         "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png",
         "https://cdn.discordapp.com/attachments/694970532583702580/975844374057484378/prisma.png",
-        "https://www.sophos.com/sites/default/files/2022-02/aws-logo-white-orange.png"
+        "https://www.sophos.com/sites/default/files/2022-02/aws-logo-white-orange.png",
+        "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png"
     ]
 
     const list=techList.map((techLogo,index)=>
@@ -29,7 +29,10 @@ const AboutUs = () => {
     )
 
     return (
+
+
         <div className={"container"}>
+            <h1 className={"slogan"}>MOVING THE WORLD FORWARD.</h1>
             <h1 className={"tittle"}>ABOUT US</h1>
             <div className={"text"}>
                 <p>We are a tailor-made software company with the drive and skills necessary to take your business to the next level. </p>

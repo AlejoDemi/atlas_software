@@ -8,6 +8,7 @@
     min-height: 300px;
     z-index: 1;
     max-height: 600px;
+    background: #041223;
 }
 
 .contactUsBox .title{
@@ -46,14 +47,16 @@
     font-size: large;
 }
 
+
 .text textarea{
     resize: none;
 }
 
 .form .formButtonContainer{
-    height: 20%;
+    height: 25%;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .formButtonContainer .button{
@@ -71,7 +74,7 @@
 }
 
 
-.formButtonContainer .button:focus{
+.formButtonContainer .button:hover{
     background:white ;
     color: #001027;
 }

@@ -8,6 +8,11 @@
 
 }
 
+.container .slogan{
+    font-family: "Fira Sans", serif;
+    font-size:500% ;
+}
+
 .container .tittle{
     font-size: 300%;
 }
