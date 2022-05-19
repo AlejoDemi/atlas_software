@@ -5,6 +5,7 @@ import Header from "./Header.js";
 import AboutUs from "../AboutUs/AboutUs";
 import ContactUs from "../ContactUs/ContactUs";
 import {useEffect, useRef, useState} from "react";
+import PageBinder from "../Binder/PageBinder";
 
 //import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 //import {config, useSpring} from 'react-spring'
@@ -29,7 +30,7 @@ const Canvas = () => {
 
 
     return (
-                <Parallax ref={ref} config={{tension:10000,clamp:true}} pages={3} className="parallax" style={{backgroundColor:"#000723",scrollBehavior:"smooth"}}>
+                <Parallax ref={ref} config={{tension:10000,clamp:true}} pages={4} className="parallax" style={{backgroundColor:"#000723",scrollBehavior:"smooth"}}>
 
                         <ParallaxLayer speed={-0.35} offset={0} innerStyle={{display:"flex",flexDirection:"column",backgroundImage: 'url("https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ac35929aa1146b1afd954acbaa6fbc1~tplv-k3u1fbpfcp-watermark.awebp?")',backgroundSize:"contain", repeat:"true"}}>
                             <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
@@ -67,13 +68,11 @@ const Canvas = () => {
                                         goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
                         </ParallaxLayer>
 
-                        <ParallaxLayer id="whoWeAre" offset={1} style={{color:"white"}}>
-                            <AboutUs></AboutUs>
+                        <ParallaxLayer id="whoWeAre" offset={1} >
+                            <PageBinder></PageBinder>
                         </ParallaxLayer>
 
-                        <ParallaxLayer sticky={{start:2.2,end:2.2}} offset={2.2} >
-                           <ContactUs></ContactUs>
-                        </ParallaxLayer>
+
 
                         </Parallax>
     );

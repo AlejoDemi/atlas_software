@@ -1,20 +1,23 @@
 .container{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    overflow: auto;
 
 }
 
 .container .slogan{
     font-family: "Fira Sans", sans-serif;
     font-size:600% ;
+    color: white;
 }
 
 .container .tittle{
     font-size: 300%;
+    color: white;
 }
 
 .container .text{
@@ -24,13 +27,14 @@
 
 .text p{
     font-size: 20px;
+    color: white;
 }
 
 .container .techList{
     display: grid;
     width: 70%;
-    height: 30%;
-    margin: 10px auto auto auto;
+    height: 10%;
+    margin: 10px auto 10px auto;
     grid-template-columns: repeat(6,1fr);
     justify-items: center;
 }
@@ -46,11 +50,11 @@
 
     .container .techList{
         display: grid;
-        grid-template-columns: repeat(6,1fr );
+        grid-template-columns: repeat(3,1fr );
     }
 
-    .techList img{
-        height: 50px;
-        width: 50px;
+    .container .slogan{
+        font-size: 50px;
     }
+
 }
