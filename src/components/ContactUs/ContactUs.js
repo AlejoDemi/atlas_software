@@ -65,7 +65,7 @@ const ContactUs = (effect, deps) => {
                  <PacmanLoader  color={"#E392BE"}  size={20} />:
                 showError?
             <h3 style={{color:"red"}}>You must complete all the obligatory fields (*)</h3> :
-            showSuccess?<h3 style={{color:"green"}}>Thanks for choosing us,we will contact you as soon as possible!</h3>:
+            showSuccess?<h3 style={{color:"green"}}>Thanks for choosing us, we will contact you as soon as possible!</h3>:
             null}
         </div>
     </div>

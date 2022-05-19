@@ -34,19 +34,19 @@ const Canvas = () => {
 
                         <ParallaxLayer speed={-0.35} offset={0.07} style={{backgroundImage: 'url("https://i.ibb.co/0D0MGTz/light-Logo.png")', backgroundPosition: 'center 5%', repeat:"true", backgroundSize:"400px 410px"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={-0.35} offset={0.35} style={{backgroundImage: 'url("https://i.ibb.co/4PFw9G2/layer1.png")', backgroundPosition: '55% 40%', repeat:"true"}}>
+                        <ParallaxLayer speed={-0.35} offset={0.35} style={{backgroundImage: "url('https://svgshare.com/i/hYk.svg')", backgroundPosition: 'center 30%', repeat:"true"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={-0.25} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/tbBYZwf/layer2.png")', backgroundPosition: 'center 70%', repeat:"true"}}>
+                        <ParallaxLayer speed={-0.25} offset={0.25} style={{backgroundImage:'url("https://svgur.com/i/hYm.svg")', backgroundPosition: 'center 70%', repeat:"true"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={-0.2} offset={0.5} style={{backgroundImage:'url("https://i.ibb.co/V9TByyZ/layer3.png")', backgroundPosition: 'center 100%', repeat:"true"}}>
+                        <ParallaxLayer speed={-0.2} offset={0.25} style={{backgroundImage:'url("https://svgur.com/i/hYD.svg")', backgroundPosition: 'center 40%', repeat:"true"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={0.1} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/XycKkVB/layer4.png")', backgroundPosition: 'center 80%', repeat:"true"}}>
+                        <ParallaxLayer speed={0.1} offset={0.25} style={{backgroundImage:'url("https://svgur.com/i/hWu.svg")', backgroundPosition: 'center 50%', repeat:"true"}}>
                         </ParallaxLayer>
                         <ParallaxLayer speed={0.1} offset={1} style={{background:"#000723"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={0.15} offset={0.25} style={{backgroundImage:'url("https://i.ibb.co/RBnR2x7/layer5.png")', backgroundPosition: 'center 80%', repeat:"true"}}>
+                        <ParallaxLayer speed={0.15} offset={0.25} style={{backgroundImage:'url("https://svgur.com/i/hYa.svg")', backgroundPosition: 'center 70%', repeat:"true"}}>
                         </ParallaxLayer>
-                        <ParallaxLayer speed={0.35} offset={0.65} style={{backgroundImage:'url("https://i.ibb.co/LhQ8PnK/layer6.png")', backgroundPosition:"center 0%", repeat:"true"}}>
+                        <ParallaxLayer speed={0.35} offset={0.65} style={{backgroundImage:'url("https://svgur.com/i/hXj.svg")', backgroundPosition:"center -10%", repeat:"true"}}>
                         </ParallaxLayer>
 
                         <ParallaxLayer speed={0.3} offset={0.9}>
@@ -55,7 +55,7 @@ const Canvas = () => {
                             </section>
                         </ParallaxLayer>
 
-                        <ParallaxLayer offset={1}>
+                        <ParallaxLayer offset={1} style={{"background":"#000723"}}>
                             <h1 className={"slogan"}>MOVING THE WORLD<div style={{"color": "#E392BE", "fontStyle":"italic"}}> FORWARD.</div></h1>
                         </ParallaxLayer>
                         <ParallaxLayer speed={0.35} offset={1.6} style={{background:"#000723"}}>
