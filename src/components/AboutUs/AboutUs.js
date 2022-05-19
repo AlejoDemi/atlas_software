@@ -27,7 +27,7 @@ import vue from "../../assets/techs/vue-js-1.svg";
 import webstorm from "../../assets/techs/webstorm-icon.svg";
 
 
-// techs missing: html, css, javascript, docker, sass, git, postgres, 
+// techs missing: html, css, javascript, docker, sass, git, postgres, prisma
 
 const AboutUs = () => {
 

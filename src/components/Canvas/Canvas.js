@@ -7,9 +7,6 @@ import ContactUs from "../ContactUs/ContactUs";
 import {useEffect, useRef, useState} from "react";
 import PageBinder from "../Binder/PageBinder";
 
-//import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-//import {config, useSpring} from 'react-spring'
-
 // used https://es.imgbb.com/ to upload the image and use it (line 25) - Pedro
 
 const Canvas = () => {
@@ -65,8 +62,8 @@ const Canvas = () => {
                         </ParallaxLayer>
 
                         <ParallaxLayer sticky={{start:0,end:2}} >
-                                <Header goToContact={()=>ref.current.scrollTo(1.9)}
-                                        goToAboutUs={()=>ref.current.scrollTo(1)}
+                                <Header goToContact={()=>ref.current.scrollTo(3)}
+                                        goToAboutUs={()=>ref.current.scrollTo(1.9)}
                                         goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
                         </ParallaxLayer>
 

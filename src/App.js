@@ -1,9 +1,7 @@
-//import logo from './logo.svg';
 import './App.css';
 import Canvas from "./components/Canvas/Canvas";
 import {useEffect, useState} from "react";
 import { SpinnerDotted } from 'spinners-react';
-//import  {ParticlesStars} from "./components/Particles";
 
 function App() {
 
@@ -13,6 +11,17 @@ function App() {
     setTimeout(()=>setTimer(false),1200)
   },[])
 
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
+
+    const updateMedia = () => {
+        setDesktop(window.innerWidth > 600);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        return () => window.removeEventListener("resize", updateMedia);
+    });
+
   return (
       timer?
           <div style={{height:"100vh",width:"100vw",display:"flex",justifyContent:"center",alignContent:"center",background:"#001027"}}>
@@ -20,8 +29,6 @@ function App() {
           </div>
             :
             <Canvas/>
-
-
   );
 }
 
