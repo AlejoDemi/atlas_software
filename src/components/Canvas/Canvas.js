@@ -67,6 +67,7 @@ const Canvas = () => {
                                         goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
                         </ParallaxLayer>
 
+
                         <ParallaxLayer id="whoWeAre" offset={1.5} >
                             <PageBinder></PageBinder>
                         </ParallaxLayer>
