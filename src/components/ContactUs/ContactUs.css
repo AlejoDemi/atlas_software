@@ -46,6 +46,7 @@
 }
 
 
+
 .text textarea{
     resize: none;
     height: 30px;
@@ -76,5 +77,9 @@
 .formButtonContainer .button:hover{
     background:white ;
     color: #001027;
+}
+
+.contactUsBox .state{
+    color: red;
 }
 
