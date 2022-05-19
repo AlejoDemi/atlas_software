@@ -7,6 +7,7 @@ const ContactUs = () => {
 
     const [fullName, setFullName ] = useState("");
     const [email, setEmail ] = useState("");
+    const [phone, setPhone ] = useState("");
     const [message, setMessage ] = useState("");
 
 
@@ -33,6 +34,7 @@ const ContactUs = () => {
             <div className={"text"}>
                 <input name = "user_name" className={"input"} type="text" placeholder={"Full Name"} onChange={e=>setFullName(e.target.value)}/>
                 <input name = "user_email" className={"input"} type="email" placeholder={"Email"} onChange={e=>setEmail(e.target.value)}/>
+                <input name = "user_phone" className={"input"} type="text" placeholder={"Phone"} onChange={e=>setPhone(e.target.value)}/>
                 <textarea name = "message" className={"input"} style={{height:"80px"}} placeholder={"Message"} onChange={e=>setMessage(e.target.value)}/>
             </div>
             <div className={"formButtonContainer"}>

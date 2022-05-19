@@ -17,17 +17,17 @@
 }
 
 .title h1{
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .contactUsBox .form{
     display: flex;
     flex-direction: column;
-    height:80% ;
+    height:90% ;
 }
 
 .form .text{
-    height: 90%;
+    height: 80%;
     display: flex;
     flex-direction: column;
 
@@ -48,10 +48,11 @@
 
 .text textarea{
     resize: none;
+    height: 30px;
 }
 
 .form .formButtonContainer{
-    height: 25%;
+    height: 20%;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -61,7 +62,7 @@
     font-size: 100%;
     border: 3px solid white;
     border-radius: 10px;
-    background: none;
+    background:#041223 ;
     color: white;
     width: 15%;
     min-width: 60px;
