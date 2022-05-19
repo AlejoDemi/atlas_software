@@ -10,6 +10,13 @@
     width: 200vh;
 }
 
+.parallax .slogan{
+  font-family: "Fira Sans", sans-serif;
+  font-size:600% ;
+  color: white;
+  text-align: center;
+}
+
 
 /*mouse outline*/
 #scrollIcon {

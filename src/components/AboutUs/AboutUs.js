@@ -1,38 +1,66 @@
 import React from 'react';
 import "./AboutUs.css";
 
+import angular from "../../assets/techs/angular-icon-1.svg";
+import aws1 from "../../assets/techs/aws-2.svg";
+import aws2 from "../../assets/techs/aws-dynamodb.svg";
+import django from "../../assets/techs/django.svg";
+import github from "../../assets/techs/github-icon.svg";
+import graphql from "../../assets/techs/graphql.svg";
+import intellij from "../../assets/techs/intellij-idea-1.svg";
+import java from "../../assets/techs/java-4.svg";
+import kotlin from "../../assets/techs/kotlin-1.svg";
+//import bootstrap from "../../assets/techs/logo-bootstrap.svg";
+//import css from "../../assets/techs/logo-css3.svg";
+//import html from "../../assets/techs/logo-html5.svg";
+//import jquery from "../../assets/techs/logo-jquery.svg";
+//import sass from "../../assets/techs/logo-sass.svg";
+import mongo from "../../assets/techs/mongodb-icon-1.svg";
+import mysql from "../../assets/techs/mysql-6.svg";
+import nodejs from "../../assets/techs/nodejs.svg";
+import python from "../../assets/techs/python-5.svg";
+import react from "../../assets/techs/react-2.svg";
+import redux from "../../assets/techs/redux.svg";
+import spark from "../../assets/techs/spark-2.svg";
+import typescript from "../../assets/techs/typescript.svg";
+import vue from "../../assets/techs/vue-js-1.svg";
+import webstorm from "../../assets/techs/webstorm-icon.svg";
+
+
+// techs missing: html, css, javascript, docker, sass, git, postgres, 
+
 const AboutUs = () => {
 
     const techList=[
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png",
-        "https://kreango.com/assets/images/frameworks/back-js.png",
-        "https://davidcaballerocalvo.es/img/ts.png",
-        "https://cdn-icons-png.flaticon.com/512/226/226777.png",
-        "https://img.icons8.com/color/480/redux.png",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png",
-        "https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
-        "https://res.cloudinary.com/marcomadera/image/upload/v1602894559/Blog/7/css_k23ypb.png",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png",
-        "https://academy.aviada.mx/wp-content/uploads/sites/6/2020/10/git-icon.png",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/800px-GraphQL_Logo.svg.png",
-        "https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png",
-        "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png",
-        "https://cdn.discordapp.com/attachments/694970532583702580/975844374057484378/prisma.png",
-        "https://www.sophos.com/sites/default/files/2022-02/aws-logo-white-orange.png",
-        "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png"
+        angular,
+        aws1,
+        aws2,
+        django,
+        github,
+        graphql,
+        intellij,
+        java,
+        kotlin,
+        mongo,
+        mysql,
+        nodejs,
+        python,
+        react,
+        redux,
+        spark,
+        typescript,
+        vue,
+        webstorm
     ]
 
     const list=techList.map((techLogo,index)=>
-        <img  src={techLogo} alt={techLogo}></img>
+        <img key={index} src={techLogo} alt={techLogo}></img>
     )
 
     return (
 
 
         <div className={"container"}>
-            <h1 className={"slogan"}>MOVING THE WORLD<div style={{"color": "#E392BE", "fontStyle":"italic"}}> FORWARD.</div></h1>
             <h1 className={"tittle"}>ABOUT US</h1>
             <div className={"text"}>
                 <p>We are a tailor-made software company with the drive and skills necessary to take your business to the next level. </p>

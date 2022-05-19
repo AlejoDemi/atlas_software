@@ -14,7 +14,6 @@ import PageBinder from "../Binder/PageBinder";
 
 const Canvas = () => {
     const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
-    console.log(window.innerWidth)
 
     const updateMedia = () => {
         setDesktop(window.innerWidth > 600);
@@ -32,7 +31,7 @@ const Canvas = () => {
     return (
                 <Parallax ref={ref} config={{tension:10000,clamp:true}} pages={4} className="parallax" style={{backgroundColor:"#000723",scrollBehavior:"smooth"}}>
 
-                        <ParallaxLayer speed={-0.35} offset={0} innerStyle={{display:"flex",flexDirection:"column",backgroundImage: 'url("https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2ac35929aa1146b1afd954acbaa6fbc1~tplv-k3u1fbpfcp-watermark.awebp?")',backgroundSize:"contain", repeat:"true"}}>
+                        <ParallaxLayer speed={-0.35} offset={0} style={{display:"flex",flexDirection:"column",backgroundSize:"contain", repeat:"true"}}>
                             <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
                         </ParallaxLayer>
 
@@ -59,16 +58,19 @@ const Canvas = () => {
                             </section>
                         </ParallaxLayer>
 
+                        <ParallaxLayer offset={1}>
+                            <h1 className={"slogan"}>MOVING THE WORLD<div style={{"color": "#E392BE", "fontStyle":"italic"}}> FORWARD.</div></h1>
+                        </ParallaxLayer>
                         <ParallaxLayer speed={0.35} offset={1.6} style={{background:"#000723"}}>
                         </ParallaxLayer>
 
-                        <ParallaxLayer sticky={{start:0,end:3}} >
+                        <ParallaxLayer sticky={{start:0,end:2}} >
                                 <Header goToContact={()=>ref.current.scrollTo(1.9)}
                                         goToAboutUs={()=>ref.current.scrollTo(1)}
                                         goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
                         </ParallaxLayer>
 
-                        <ParallaxLayer id="whoWeAre" offset={0.7} >
+                        <ParallaxLayer id="whoWeAre" offset={1.5} >
                             <PageBinder></PageBinder>
                         </ParallaxLayer>
                 </Parallax>
