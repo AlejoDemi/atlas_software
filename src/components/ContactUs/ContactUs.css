@@ -8,6 +8,8 @@
     min-height: 300px;
     max-height: 600px;
     background: rgba(0, 1, 2, 0.53);
+    opacity: 1
+;
 }
 
 .contactUsBox .title{

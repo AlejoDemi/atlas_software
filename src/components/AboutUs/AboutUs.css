@@ -6,7 +6,8 @@
     text-align: center;
     justify-content: center;
     overflow: auto;
-
+    position: relative;
+    z-index: 1;
 }
 
 .container .title{
@@ -72,11 +73,11 @@
 @media (max-width: 900px) {
 
     .container .title{
-        color: black;
+        color: white;
     }
 
     .text p{
-        color: black;
+        color: white;
     }
 }
 
@@ -87,7 +88,7 @@
     }
 
     .text p{
-        color: black;
+        color: white;
     }
 
     .horizontal .picture1{

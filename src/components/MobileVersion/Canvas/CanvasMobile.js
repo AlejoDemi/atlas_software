@@ -3,13 +3,15 @@ import PageBinder from "../../Binder/PageBinder";
 import AboutUs from "../../AboutUs/AboutUs";
 import ContactUs from "../../ContactUs/ContactUs";
 import "./CanvasMobile.css"
+import {ParticlesStars} from "../../Canvas/Particles";
 
 const CanvasMobile = () => {
 
     return (
         <div style={{width:"100%",background:"lightgray",height:"410vh",display:"flex",justifyContent:"center",textAlign:"center"}}>
             <div >
-                <div className={"headerMobile"} style={{height:"100vh"}}>
+                <ParticlesStars></ParticlesStars>
+                <div className={"headerMobile"} style={{position:"relative",height:"100vh",zIndex:"1"}}>
 
                 </div>
                 <div style={{height:"210vh"}}>

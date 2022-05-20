@@ -18,6 +18,7 @@ export const ParticlesStars = (props) => {
 
     return (
         <Particles
+            style={{zIndex:"-1"}}
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}

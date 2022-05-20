@@ -3,6 +3,7 @@ import "./ContactUs.css"
 import React, {useEffect, useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import {PacmanLoader} from "react-spinners";
+import {ParticlesStars} from "../Canvas/Particles";
 
 const ContactUs = (effect, deps) => {
 
@@ -45,30 +46,31 @@ const ContactUs = (effect, deps) => {
   },[]);
 
   return (
-    <div className={"contactUsBox"} style={{zIndex:"3"}} >
-        <h1 className={"title"}>CONTACT US</h1>
-        <form ref={form} onSubmit={sendEmail} className={"form"}>
-            <div className={"text"}>
-                <input name = "user_name" className={"input"} style={{color:showError && fullName===""?"red":"white" }} type="text" placeholder={"Full Name (*)"} onChange={e=>setFullName(e.target.value)}/>
-                <input name = "user_email" className={"input"} style={{color:showError && email===""?"red":"white" }} type="email" placeholder={"Email (*)"} onChange={e=>setEmail(e.target.value)}/>
-                <input name = "user_phone" className={"input"}  type="text" placeholder={"Phone"} onChange={e=>setPhone(e.target.value)}/>
-                <textarea name = "message" className={"input"} style={{color:showError && message===""?"red":"white",height:"80px" }}  placeholder={"Message (*)"} onChange={e=>setMessage(e.target.value)}/>
-            </div>
-            <div className={"formButtonContainer"}>
-                <input type="submit" value="Send" className={"button"} />
+          <div className={"contactUsBox"} style={{zIndex:"1"}} >
+              <h1 className={"title"}>CONTACT US</h1>
+              <form ref={form} onSubmit={sendEmail} className={"form"}>
+                  <div className={"text"}>
+                      <input name = "user_name" className={"input"} style={{color:showError && fullName===""?"red":"white" }} type="text" placeholder={"Full Name (*)"} onChange={e=>setFullName(e.target.value)}/>
+                      <input name = "user_email" className={"input"} style={{color:showError && email===""?"red":"white" }} type="email" placeholder={"Email (*)"} onChange={e=>setEmail(e.target.value)}/>
+                      <input name = "user_phone" className={"input"}  type="text" placeholder={"Phone"} onChange={e=>setPhone(e.target.value)}/>
+                      <textarea name = "message" className={"input"} style={{color:showError && message===""?"red":"white",height:"80px" }}  placeholder={"Message (*)"} onChange={e=>setMessage(e.target.value)}/>
+                  </div>
+                  <div className={"formButtonContainer"}>
+                      <input type="submit" value="Send" className={"button"} />
 
-            </div>
-        </form>
+                  </div>
+              </form>
 
-        <div style={{margin:"auto",display:"flex",justifyContent:"center",alignContent:"center",textAlign:"center"}}>
-            {loading?
-                 <PacmanLoader  color={"#E392BE"}  size={20} />:
-                showError?
-            <h3 style={{color:"red"}}>You must complete all the obligatory fields (*)</h3> :
-            showSuccess?<h3 style={{color:"green"}}>Thanks for choosing us, we will contact you as soon as possible!</h3>:
-            null}
-        </div>
-    </div>
+              <div style={{margin:"auto",display:"flex",justifyContent:"center",alignContent:"center",textAlign:"center"}}>
+                  {loading?
+                      <PacmanLoader  color={"#E392BE"}  size={20} />:
+                      showError?
+                          <h3 style={{color:"red"}}>You must complete all the obligatory fields (*)</h3> :
+                          showSuccess?<h3 style={{color:"green"}}>Thanks for choosing us, we will contact you as soon as possible!</h3>:
+                              null}
+              </div>
+          </div>
+
 );
 };
 export default ContactUs;

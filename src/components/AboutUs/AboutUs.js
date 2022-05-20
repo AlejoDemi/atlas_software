@@ -66,7 +66,7 @@ const AboutUs = () => {
     return (
 
 
-        <div className={"container"}>
+        <div className={"container"} style={{zIndex:"1"}}>
             <h1 className={"title"}>ABOUT US</h1>
             <div className={"horizontal"}>
                 <div className={"text"}>
