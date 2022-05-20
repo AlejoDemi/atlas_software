@@ -4,8 +4,8 @@ import ContactUs from "../ContactUs/ContactUs";
 
 const PageBinder = () => {
     return (
-        <div style={{height:"350vh"}}>
-            <div style={{height:"250vh"}}>
+        <div style={{height:"300vh"}}>
+            <div style={{height:"200vh"}}>
                 <AboutUs></AboutUs>
             </div>
             <div style={{height:"100vh",display:"flex",justifyContent:"center"}}>

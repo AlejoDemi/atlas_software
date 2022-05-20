@@ -89,3 +89,14 @@
     }
 
 }
+
+@media (max-width: 400px) {
+    .text p{
+        font-size: 15px;
+    }
+
+    .techList img{
+        height: 50px;
+        width: 50px;
+    }
+}

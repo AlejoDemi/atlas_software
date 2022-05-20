@@ -26,7 +26,7 @@ const Canvas = () => {
 
 
     return (
-        <Parallax ref={ref} config={{tension:10000,clamp:true}} pages={5} className="parallax" style={{backgroundColor:"#000723",scrollBehavior:"smooth"}}>
+        <Parallax ref={ref} config={{tension:10000,clamp:true}} pages={4} className="parallax" style={{backgroundColor:"#000723",scrollBehavior:"smooth"}}>
 
             <ParallaxLayer speed={-0.35} offset={0} style={{display:"flex",flexDirection:"column",backgroundSize:"contain", repeat:"true"}}>
                 <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
@@ -59,7 +59,7 @@ const Canvas = () => {
                 <h1 className={"slogan"}>MOVING THE WORLD<div style={{"color": "#E392BE", "fontStyle":"italic"}}> FORWARD.</div></h1>
             </ParallaxLayer>
 
-            <ParallaxLayer sticky={{start:0,end:2.9}} >
+            <ParallaxLayer sticky={{start:0,end:2.3}} >
                 <Header goToContact={()=>ref.current.scrollTo(4)}
                         goToAboutUs={()=>ref.current.scrollTo(1.9)}
                         goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>

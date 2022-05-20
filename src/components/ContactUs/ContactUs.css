@@ -84,3 +84,9 @@
     color: red;
 }
 
+@media (max-width :900px) {
+    .contactUsBox{
+        min-width: 80%;
+    }
+}
+

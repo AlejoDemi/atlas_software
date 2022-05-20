@@ -14,10 +14,10 @@ function App() {
     setTimeout(()=>setTimer(false),2000)
   },[])
 
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 800);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 900);
 
     const updateMedia = () => {
-        setDesktop(window.innerWidth > 800);
+        setDesktop(window.innerWidth > 900);
     };
 
     useEffect(() => {
