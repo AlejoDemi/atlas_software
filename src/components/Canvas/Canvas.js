@@ -34,7 +34,7 @@ const Canvas = () => {
 
             <ParallaxLayer speed={-0.35} offset={0.1} style={{backgroundImage: "url('https://svgur.com/i/hXz.svg')", backgroundPosition: 'center 90%', repeat:"true"}}>
             </ParallaxLayer>            
-            <ParallaxLayer speed={-0.25} offset={0.25} style={{backgroundImage:'url("https://svgur.com/i/hYm.svg")', backgroundPosition: 'center 70%', repeat:"true"}}>
+            <ParallaxLayer speed={-0.25} offset={0.23} style={{backgroundImage:'url("https://svgur.com/i/hYm.svg")', backgroundPosition: 'center 70%', repeat:"true"}}>
             </ParallaxLayer>
             <ParallaxLayer speed={-0.2} offset={0.25} style={{backgroundImage:'url("https://svgur.com/i/hZK.svg")', backgroundPosition: 'center 40%', repeat:"true"}}>
             </ParallaxLayer>
@@ -46,7 +46,7 @@ const Canvas = () => {
             </ParallaxLayer>
 
             <ParallaxLayer speed={0.5} offset={0.9} style={{background:"#000723"}}>
-                <div style={{background:"#000723", backgroundSize:"1000px 1000px"}}></div>
+                <div style={{background:"#000723"}}></div>
             </ParallaxLayer>
 
             <ParallaxLayer speed={0.3} offset={0.9}>
