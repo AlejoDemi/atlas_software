@@ -81,14 +81,14 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
     .horizontal .text{
         width: 100%;
     }
 
     .text p{
-        color: white;
+        color: black;
     }
 
     .horizontal .picture1{
@@ -107,6 +107,8 @@
 }
 
 @media (max-width: 450px) {
+
+
     .text p{
         font-size: 90%;
     }
