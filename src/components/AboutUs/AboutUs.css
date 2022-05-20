@@ -71,13 +71,21 @@
 
 @media (max-width: 600px) {
 
-    .container .techList{
-        display: grid;
-        grid-template-columns: repeat(3,1fr );
+    .horizontal .text{
+        width: 100%;
     }
 
-    .container .slogan{
-        font-size: 50px;
+    .horizontal .picture1{
+        width: 0;
+    }
+
+    .horizontal .picture2{
+        width: 0;
+    }
+
+    .container .techList{
+        display: grid;
+        grid-template-columns: repeat(4,1fr );
     }
 
 }
