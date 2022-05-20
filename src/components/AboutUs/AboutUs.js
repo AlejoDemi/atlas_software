@@ -19,7 +19,7 @@ import postgresql from "../../assets/techs/postgresql.svg"
 import jquery from "../../assets/techs/jquery-4.svg";
 import sass from "../../assets/techs/sass-1.svg";
 import docker1 from "../../assets/techs/docker-3.svg"
-//import docker2 from "../../assets/techs/docker.svg"
+import docker2 from "../../assets/techs/docker.svg"
 import mongo from "../../assets/techs/mongodb-icon-1.svg";
 import mysql from "../../assets/techs/mysql-6.svg";
 import nodejs from "../../assets/techs/nodejs-icon.svg";
@@ -37,35 +37,26 @@ import webstorm from "../../assets/techs/webstorm-icon.svg";
 const AboutUs = () => {
 
     const techList=[
-        angular,
         aws1,
         aws2,
         django,
         git,
-        github,
         graphql,
-        vue,
         java,
         prisma,
         css,
         html,
         javascript,
         postgresql,
-        docker1,
         jquery,
-        //docker2,
-        kotlin,
-        mongo,
+        docker2,
         mysql,
         nodejs,
         python,
         react,
         redux,
-        spark,
         sass,
         typescript,
-        intellij,
-        webstorm
     ]
 
     const list=techList.map((techLogo,index)=>
@@ -77,12 +68,18 @@ const AboutUs = () => {
 
         <div className={"container"}>
             <h1 className={"title"}>ABOUT US</h1>
-            <div className={"text"}>
-                <p>We are a tailor-made software company with the drive and skills necessary to take your business to the next level. </p>
-                <p>Born and founded by excellence-driven Software Engineering students, with the philosophy of achieving top-tier quality in all aspects.
-                We seek to fully unleash the power of new, innovative technologies, along with the stability provided by fundamental classics. </p>
-                <p>Our goal is to cater for the needs of our clients, for we believe that together, we will make the world move forward. </p>
+            <div className={"horizontal"}>
+                <div className={"text"}>
+                    <p>We are a tailor-made software company with the drive and skills necessary to take your business to the next level. </p>
+                    <p>Born and founded by excellence-driven Software Engineering students, with the philosophy of achieving top-tier quality in all aspects.
+                        We seek to fully unleash the power of new, innovative technologies, along with the stability provided by fundamental classics. </p>
+                    <p>Our goal is to cater for the needs of our clients, for we believe that together, we will make the world move forward. </p>
+                </div>
+                <div className={"picture"}>
+
+                </div>
             </div>
+
 
             <div className={"techList"}>
                 {list}

@@ -6,7 +6,7 @@
     min-width: 300px;
     min-height: 300px;
     max-height: 600px;
-    background: #041223;
+    background: rgba(0, 1, 2, 0.53);
 }
 
 .contactUsBox .title{
