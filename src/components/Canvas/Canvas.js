@@ -59,8 +59,8 @@ const Canvas = () => {
                 <h1 className={"slogan"}>MOVING THE WORLD<div style={{"color": "#E392BE", "fontStyle":"italic"}}> FORWARD.</div></h1>
             </ParallaxLayer>
 
-            <ParallaxLayer sticky={{start:0,end:2}} >
-                <Header goToContact={()=>ref.current.scrollTo(3)}
+            <ParallaxLayer sticky={{start:0,end:3}} >
+                <Header goToContact={()=>ref.current.scrollTo(4)}
                         goToAboutUs={()=>ref.current.scrollTo(1.9)}
                         goToTop={()=>ref.current.scrollTo(0, {behavior:'auto'})}/>
             </ParallaxLayer>
