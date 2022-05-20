@@ -1,7 +1,7 @@
 .contactUsBox{
     height: 60vh;
     width: 40vw;
-    margin: auto;
+    margin: 0 auto auto auto;
     border:5px solid white;
     border-radius: 20px;
     min-width: 300px;

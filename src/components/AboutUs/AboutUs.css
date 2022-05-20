@@ -15,6 +15,7 @@
 }
 
 .container .horizontal{
+    height: 20%;
     display: flex;
     flex-direction: row;
     margin: 0 50px 0 50px;
@@ -23,8 +24,8 @@
 .horizontal .picture1{
     background-size: cover;
     background: url("https://techparlee.com/wp-content/uploads/2020/07/coder_190517-800x450-1.jpg") fixed center;
-    height: 300px;
-    width: 50%;
+    height: 70%;
+    width: 40%;
     margin: auto;
     border-radius: 20px;
 }
@@ -32,26 +33,31 @@
 .horizontal .picture2{
     background-size: cover;
     background: url("https://www.grupodotcom.com/wp-content/uploads/2019/10/software-developer-vs-software-engineer.jpg") fixed center;
-    height: 300px;
-    width: 50%;
+    height: 70%;
+    width: 40%;
     margin: auto;
     border-radius: 20px;
 }
 
 .horizontal .text{
     width: 50%;
-    margin: 10px auto;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
 }
 
 .text p{
-    font-size: 20px;
+    font-size: large;
     color: white;
 }
 
 .container .techList{
     display: grid;
     width: 70%;
-    height: 10%;
+    height: 20%;
     margin: 50px auto 10px auto;
     grid-template-columns: repeat(5,10fr);
     justify-items: center;
@@ -59,9 +65,8 @@
 
 .techList img{
 
-    height: 60px;
-    max-width: 70px;
-    margin-bottom: 10px;
+    height: 70px;
+    width: 70px;
 }
 
 @media (max-width: 600px) {
