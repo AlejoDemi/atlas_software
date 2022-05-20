@@ -69,10 +69,25 @@
     width: 70px;
 }
 
+@media (max-width: 900px) {
+
+    .container .title{
+        color: black;
+    }
+
+    .text p{
+        color: black;
+    }
+}
+
 @media (max-width: 700px) {
 
     .horizontal .text{
         width: 100%;
+    }
+
+    .text p{
+        color: black;
     }
 
     .horizontal .picture1{
@@ -90,13 +105,13 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .text p{
-        font-size: 15px;
+        font-size: 90%;
     }
 
     .techList img{
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
     }
 }

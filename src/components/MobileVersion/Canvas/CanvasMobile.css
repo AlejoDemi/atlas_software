@@ -1,0 +1,15 @@
+.headerMobile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    background-image: url('https://svgur.com/i/hXz.svg');
+    background-position: bottom;
+    background-color: #001027;
+    background-size: cover;
+}
+
+.headerMobile .logo{
+
+}
