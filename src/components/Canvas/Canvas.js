@@ -55,7 +55,7 @@ const Canvas = () => {
                 </section>
             </ParallaxLayer>
 
-            <ParallaxLayer offset={1} style={{"background":"#000723"}}>
+            <ParallaxLayer speed={0} offset={1} style={{"background":"#000723"}}>
                 <h1 className={"slogan"}>MOVING THE WORLD<div style={{"color": "#E392BE", "fontStyle":"italic"}}> FORWARD.</div></h1>
             </ParallaxLayer>
 
