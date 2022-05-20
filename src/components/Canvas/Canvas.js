@@ -66,7 +66,7 @@ const Canvas = () => {
             </ParallaxLayer>
 
 
-            <ParallaxLayer id="whoWeAre" offset={1.5} >
+            <ParallaxLayer id="whoWeAre" offset={1.3} >
                 <PageBinder></PageBinder>
             </ParallaxLayer>
         </Parallax>
