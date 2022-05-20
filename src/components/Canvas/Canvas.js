@@ -2,8 +2,8 @@ import "./Canvas.css";
 import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import {ParticlesStars} from "./Particles";
 import Header from "./Header.js";
-import AboutUs from "../AboutUs/AboutUs";
-import ContactUs from "../ContactUs/ContactUs";
+//import AboutUs from "../AboutUs/AboutUs";
+//import ContactUs from "../ContactUs/ContactUs";
 import {useEffect, useRef, useState} from "react";
 import PageBinder from "../Binder/PageBinder";
 
@@ -58,8 +58,6 @@ const Canvas = () => {
             <ParallaxLayer offset={1} style={{"background":"#000723"}}>
                 <h1 className={"slogan"}>MOVING THE WORLD<div style={{"color": "#E392BE", "fontStyle":"italic"}}> FORWARD.</div></h1>
             </ParallaxLayer>
-            <ParallaxLayer speed={0.35} offset={1.6} style={{background:"#000723"}}>
-            </ParallaxLayer>
 
             <ParallaxLayer sticky={{start:0,end:2}} >
                 <Header goToContact={()=>ref.current.scrollTo(3)}
@@ -68,7 +66,7 @@ const Canvas = () => {
             </ParallaxLayer>
 
 
-            <ParallaxLayer id="whoWeAre" offset={1.5} >
+            <ParallaxLayer id="whoWeAre" offset={1.1} >
                 <PageBinder></PageBinder>
             </ParallaxLayer>
         </Parallax>
