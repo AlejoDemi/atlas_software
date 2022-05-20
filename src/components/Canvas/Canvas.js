@@ -26,7 +26,7 @@ const Canvas = () => {
 
 
     return (
-        <Parallax ref={ref} config={{tension:10000,clamp:true}} pages={4} className="parallax" style={{backgroundColor:"#000723",scrollBehavior:"smooth"}}>
+        <Parallax ref={ref} config={{tension:10000,clamp:true}} pages={5} className="parallax" style={{backgroundColor:"#000723",scrollBehavior:"smooth"}}>
 
             <ParallaxLayer speed={-0.35} offset={0} style={{display:"flex",flexDirection:"column",backgroundSize:"contain", repeat:"true"}}>
                 <ParticlesStars style={{height:"10px",width:"10px", position: "absolute"}} interact={isDesktop}/>
@@ -66,7 +66,7 @@ const Canvas = () => {
             </ParallaxLayer>
 
 
-            <ParallaxLayer id="whoWeAre" offset={1.1} >
+            <ParallaxLayer id="whoWeAre" offset={1.5} >
                 <PageBinder></PageBinder>
             </ParallaxLayer>
         </Parallax>
