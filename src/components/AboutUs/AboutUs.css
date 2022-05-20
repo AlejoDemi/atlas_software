@@ -24,7 +24,7 @@
 .horizontal .picture1{
     background-size: cover;
     background: url("https://techparlee.com/wp-content/uploads/2020/07/coder_190517-800x450-1.jpg") fixed center;
-    height: 70%;
+    height: 80%;
     width: 40%;
     margin: auto;
     border-radius: 20px;
@@ -33,7 +33,7 @@
 .horizontal .picture2{
     background-size: cover;
     background: url("https://www.grupodotcom.com/wp-content/uploads/2019/10/software-developer-vs-software-engineer.jpg") fixed center;
-    height: 70%;
+    height: 80%;
     width: 40%;
     margin: auto;
     border-radius: 20px;
