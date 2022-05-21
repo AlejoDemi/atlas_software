@@ -99,6 +99,7 @@
         width: 0;
     }
 
+
     .container .techList{
         display: grid;
         grid-template-columns: repeat(4,1fr );
