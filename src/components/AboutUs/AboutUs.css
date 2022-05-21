@@ -79,17 +79,11 @@
     .text p{
         color: black;
     }
-}
-
-@media (max-width: 900px) {
 
     .horizontal .text{
         width: 100%;
     }
 
-    .text p{
-        color: white;
-    }
 
     .horizontal .picture1{
         width: 0;
