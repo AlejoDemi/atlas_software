@@ -1,0 +1,121 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.container .title{
+    font-size: 300%;
+    color: white;
+}
+
+.container .horizontal{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px 0 50px;
+}
+
+.horizontal .picture1{
+    background-size: cover;
+    background: url("https://techparlee.com/wp-content/uploads/2020/07/coder_190517-800x450-1.jpg") fixed center;
+    height: 80%;
+    width: 40%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.horizontal .picture2{
+    background-size: cover;
+    background: url("https://www.grupodotcom.com/wp-content/uploads/2019/10/software-developer-vs-software-engineer.jpg") fixed center;
+    height: 80%;
+    width: 40%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.horizontal .text{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.text p{
+    font-size: large;
+    color: white;
+}
+
+.container .techList{
+    display: grid;
+    width: 70%;
+    height: 20%;
+    margin: 50px auto 10px auto;
+    grid-template-columns: repeat(5,10fr);
+    justify-items: center;
+}
+
+.techList img{
+
+    height: 70px;
+    width: 70px;
+}
+
+@media (max-width: 900px) {
+
+    .container .title{
+        color: white;
+    }
+
+    .text p{
+        color: black;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .horizontal .text{
+        width: 100%;
+    }
+
+    .text p{
+        color: white;
+    }
+
+    .horizontal .picture1{
+        width: 0;
+    }
+
+    .horizontal .picture2{
+        width: 0;
+    }
+
+
+    .container .techList{
+        display: grid;
+        grid-template-columns: repeat(4,1fr );
+    }
+
+}
+
+@media (max-width: 450px) {
+
+
+    .text p{
+        font-size: 90%;
+    }
+
+    .techList img{
+        height: 60px;
+        width: 60px;
+    }
+}
